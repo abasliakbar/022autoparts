@@ -1,6 +1,3 @@
-import { inject } from "@vercel/analytics"
-
-inject()
 // --- Navbar Scroll Shadow ---
 const navbar = document.getElementById('navbar');
 if (navbar) {
