@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="az" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O22 Avto Ehtiyat Hissələri | Premium Auto Spare Parts – Bakı</title>
+  <meta name="description"
+    content="O22 Avto Ehtiyat Hissələri – Bakıda orijinal və keyfiyyətli ehtiyat hissələri. Hyundai, KIA, Toyota, Nissan, Mitsubishi, Mercedes-Benz, BMW, Chevrolet. Sürətli çatdırılma." />
+  <meta name="keywords"
+    content="avto ehtiyat hissələri, spare parts, Bakı, Hyundai, KIA, Toyota, Nissan, Mitsubishi, Mercedes, BMW, Chevrolet" />
+  <meta property="og:title" content="O22 Avto Ehtiyat Hissələri | Premium Auto Spare Parts" />
+  <meta property="og:description"
+    content="Bakıda orijinal keyfiyyətli avtomobil ehtiyat hissələri. 8+ marka, ekspress çatdırılma." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS (utilities only — layout helpers) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            red: { 500: '#FF1E27', 600: '#E31E24', 700: '#C01A1F' }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ====================================================
+       HEADER / NAVBAR
+       ==================================================== -->
+  <header id="navbar" class="fixed top-0 w-full z-50 nav-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group" aria-label="O22 Home">
+          <span
+            class="font-display text-4xl font-black tracking-widest text-red-600 group-hover:tracking-[0.22em] transition-all duration-300 leading-none">O22</span>
+          <div class="hidden sm:flex flex-col justify-center">
+            <span class="text-[9px] font-bold uppercase tracking-[0.2em] leading-tight"
+              style="color: var(--color-muted)" data-az="Avto Ehtiyat" data-en="Auto Spare">Avto Ehtiyat</span>
+            <span class="text-[9px] font-bold uppercase tracking-[0.2em] leading-tight"
+              style="color: var(--color-muted)" data-az="Hissələri" data-en="Parts">Hissələri</span>
+          </div>
+        </a>
+
+        <!-- Nav Right Controls -->
+        <div class="flex items-center gap-5">
+
+          <!-- Language Toggle -->
+          <button id="lang-toggle"
+            class="text-xs font-bold tracking-[0.2em] uppercase transition-colors duration-200 hover:text-red-500"
+            style="color: var(--color-muted)" aria-label="Toggle language">
+            EN
+          </button>
+
+          <!-- Divider -->
+          <span class="w-px h-4" style="background: var(--color-border)"></span>
+
+          <!-- Theme Toggle -->
+          <button id="theme-toggle"
+            class="relative w-11 h-6 rounded-full transition-colors duration-300 focus:outline-none"
+            style="background: var(--color-surface-2); border: 1px solid var(--color-border)" aria-label="Toggle Theme">
+            <div id="theme-thumb"
+              class="absolute top-[3px] left-[3px] w-[18px] h-[18px] rounded-full bg-white transition-transform duration-300 dark:translate-x-5 flex items-center justify-center shadow-sm">
+              <!-- Sun -->
+              <svg class="w-2.5 h-2.5 text-amber-500 dark:hidden" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2a1 1 0 011 1v1a1 1 0 01-2 0V3a1 1 0 011-1zm0 18a1 1 0 011 1v1a1 1 0 01-2 0v-1a1 1 0 011-1zm8.66-15.07a1 1 0 010 1.41l-.71.71a1 1 0 01-1.41-1.41l.71-.71a1 1 0 011.41 0zM5.46 18.54a1 1 0 010 1.41l-.71.71a1 1 0 01-1.41-1.41l.71-.71a1 1 0 011.41 0zM21 12a1 1 0 01-1 1h-1a1 1 0 010-2h1a1 1 0 011 1zM4 12a1 1 0 01-1 1H2a1 1 0 010-2h1a1 1 0 011 1zm14.54 6.54a1 1 0 011.41 0l.71.71a1 1 0 01-1.41 1.41l-.71-.71a1 1 0 010-1.41zM5.46 5.46a1 1 0 011.41 0l.71.71A1 1 0 016.17 7.58l-.71-.71a1 1 0 010-1.41zM12 7a5 5 0 100 10A5 5 0 0012 7z" />
+              </svg>
+              <!-- Moon -->
+              <svg class="w-2.5 h-2.5 text-neutral-600 hidden dark:block" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M21.64 13a1 1 0 00-1.05-.14 8.05 8.05 0 01-3.37.73 8.15 8.15 0 01-8.14-8.1 8.59 8.59 0 01.25-2A1 1 0 008 2.36a10.14 10.14 0 1014 11.57 1 1 0 00-.36-.93z" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================
+       HERO SECTION
+       ==================================================== -->
+  <section class="hero-section relative flex items-center pt-20 overflow-hidden" style="min-height: 100svh;">
+    <!-- Ambient blobs -->
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+
+    <!-- Bottom fade -->
+    <div class="absolute bottom-0 left-0 w-full h-32 pointer-events-none z-10"
+      style="background: linear-gradient(to top, var(--color-bg), transparent)"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-20 w-full py-16 lg:py-0">
+
+      <!-- Text Content -->
+      <div class="fade-in">
+        <!-- Badge -->
+        <div class="hero-badge mx-auto">
+          <span class="pulse-dot"></span>
+          <span data-az="Premium Keyfiyyət" data-en="Premium Quality">Premium Keyfiyyət</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-headline">
+          <span class="block" data-az="Avtomobiliniz üçün" data-en="For Your Car">Avtomobiliniz üçün</span>
+          <span class="block accent" data-az="Ən Yaxşısı" data-en="The Very Best">Ən Yaxşısı</span>
+        </h1>
+
+        <!-- Description -->
+        <p class="text-base lg:text-xl mb-10 max-w-2xl mx-auto leading-relaxed" style="color: var(--color-muted)"
+          data-az="O22 Avto Ehtiyat Hissələri – Yüksək keyfiyyətli, orijinal və zəmanətli avtomobil ehtiyat hissələrinin etibarlı ünvanı. Bütün aparıcı markalar üçün geniş seçim."
+          data-en="O22 Auto Spare Parts – The reliable destination for high-quality, original, and guaranteed automotive spare parts. Wide selection for all leading brands.">
+          O22 Avto Ehtiyat Hissələri – Yüksək keyfiyyətli, orijinal və zəmanətli avtomobil ehtiyat hissələrinin
+          etibarlı ünvanı. Bütün aparıcı markalar üçün geniş seçim.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="#order" id="hero-cta" class="btn-primary">
+            <span data-az="İndi Sifariş Et" data-en="Order Now">İndi Sifariş Et</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span data-az="Bizimlə Əlaqə" data-en="Contact Us">Bizimlə Əlaqə</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       STATS BAR
+       ==================================================== -->
+  <div class="stats-bar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between flex-wrap gap-4">
+
+        <div class="stat-item fade-up">
+          <span class="stat-number">8+</span>
+          <span class="stat-label" data-az="Avtomobil Markası" data-en="Car Brands">Avtomobil Markası</span>
+        </div>
+
+        <div class="stat-item fade-up delay-1">
+          <span class="stat-number">5000+</span>
+          <span class="stat-label" data-az="Anbarda Hissə" data-en="Parts In Stock">Anbarda Hissə</span>
+        </div>
+
+        <div class="stat-item fade-up delay-2">
+          <span class="stat-number">24h</span>
+          <span class="stat-label" data-az="Ekspress Çatdırılma" data-en="Express Delivery">Ekspress Çatdırılma</span>
+        </div>
+
+        <div class="stat-item fade-up delay-3">
+          <span class="stat-number">100%</span>
+          <span class="stat-label" data-az="Orijinal Hissələr" data-en="Original Parts">Orijinal Hissələr</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       ORDER SECTION
+       ==================================================== -->
+  <section id="order" class="order-section py-24 lg:py-32">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center mb-14 fade-up">
+        <div class="section-tag justify-center">
+          <span data-az="Sürətli Sifariş" data-en="Quick Order">Sürətli Sifariş</span>
+        </div>
+        <h2 class="section-headline" data-az="Sifarişinizi Verin" data-en="Place Your Order">Sifarişinizi Verin</h2>
+        <p class="mt-4" style="color: var(--color-muted)"
+          data-az="Ehtiyacınız olan hissələri tapmaq üçün formu doldurun."
+          data-en="Fill out the form to find the parts you need.">
+          Ehtiyacınız olan hissələri tapmaq üçün formu doldurun.
+        </p>
+        <div class="section-divider mx-auto mt-5"></div>
+      </div>
+
+      <!-- Order Card -->
+      <div class="order-card fade-up delay-1">
+        <form id="order-form" class="space-y-8" novalidate>
+
+          <!-- Row 1: Name + Phone -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="form-label" data-az="Ad Soyad" data-en="Full Name">Ad Soyad</label>
+              <input type="text" id="field-name" class="form-input" placeholder="Əli Hüseynov" required />
+            </div>
+            <div>
+              <label class="form-label" data-az="Telefon Nömrəsi" data-en="Phone Number">Telefon Nömrəsi</label>
+              <input type="tel" id="order-phone" class="form-input" placeholder="+994" maxlength="13"
+                pattern="^\+?[0-9]{12}$" required />
+            </div>
+          </div>
+
+          <!-- Row 2: Car Model + VIN -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="form-label" data-az="Avtomobil Modeli və İli" data-en="Car Model and Year">Avtomobil Modeli
+                və İli</label>
+              <input type="text" id="field-car" class="form-input" placeholder="Məs: Hyundai Elantra 2018" required />
+            </div>
+            <div>
+              <label class="form-label">
+                <span data-az="VIN Kod" data-en="VIN Code">VIN Kod</span>
+                <span style="color: var(--color-muted); font-size: 9px; margin-left: 6px">(17 simvol)</span>
+              </label>
+              <input type="text" id="order-vin" class="form-input uppercase" placeholder="1HGBH41JXMN109186"
+                minlength="17" maxlength="17" pattern="[A-Za-z0-9]{17}" required />
+            </div>
+          </div>
+
+          <!-- Parts Textarea -->
+          <div>
+            <label class="form-label" data-az="Tələb Olunan Hissələr" data-en="Requested Parts">Tələb Olunan
+              Hissələr</label>
+            <textarea id="field-parts" rows="5" class="textarea-input"
+              placeholder="Məs: Ön sol amortizator, əyləc diski (arxa)..." required></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" id="submit-btn" class="btn-primary w-full py-5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span data-az="WhatsApp ilə Göndər" data-en="Send via WhatsApp">WhatsApp ilə Göndər</span>
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       GOOGLE MAPS + CONTACT HUB SECTION
+       ==================================================== -->
+  <section id="contact" class="contact-section py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="mb-14 fade-up">
+        <div class="section-tag">
+          <span data-az="Harada Bizi Taparsınız" data-en="Find Us">Harada Bizi Taparsınız</span>
+        </div>
+        <h2 class="section-headline" data-az="Mağaza & Əlaqə" data-en="Store & Contact">Mağaza & Əlaqə</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Map + Info Grid -->
+      <div class="map-contact-grid">
+
+        <!-- Google Map -->
+        <div class="map-wrapper fade-up delay-1">
+          <div class="map-label" data-az="Mağazamız" data-en="Our Store">Mağazamız</div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.4281!2d49.8054889!3d40.3741108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d00158a2913%3A0xd169ff1bf4b6109a!2s022%20Avto!5e0!3m2!1saz!2saz!4v1725600000000!5m2!1saz!2saz"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="O22 Auto Location – Yasamal, Bakı" style="border: 0;">
+          </iframe>
+        </div>
+
+        <!-- Contact Info Panel -->
+        <div class="contact-panel fade-up delay-2">
+
+          <!-- Address Card -->
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info-label" data-az="Ünvan" data-en="Address">Ünvan</p>
+              <p class="contact-info-value">Yasamal, A.M.Şərifzadə küç.</p>
+              <p class="contact-info-sub" data-az="Qədim Qəbələ restoranı ilə üzbəüz"
+                data-en="Opposite Old Qabala restaurant">Qədim Qəbələ restoranı ilə üzbəüz</p>
+            </div>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info-label" data-az="İş Saatları" data-en="Working Hours">İş Saatları</p>
+              <p class="contact-info-value" data-az="Həftənin hər günü: 09:00 – 19:00"
+                data-en="Every day: 09:00 – 19:00">Həftənin hər günü: 09:00 – 19:00</p>
+              <div id="store-status-badge" class="hours-badge mt-3 open">
+                <span class="status-dot"></span>
+                <span id="store-status-text">İndi Açıqdır</span>
+              </div>
+              <p id="user-tz-note" class="contact-info-sub mt-2" style="display: none; font-size: 11px; opacity: 0.75;"></p>
+            </div>
+          </div>
+
+          <!-- Instagram Card -->
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Instagram</p>
+              <a href="https://instagram.com/avto_ehtiyat_hisseleri_022"
+                class="contact-info-value hover:text-red-500 transition-colors duration-200"
+                style="display: inline-block" target="_blank" rel="noopener noreferrer">
+                @avto_ehtiyat_hisseleri_022
+              </a>
+            </div>
+          </div>
+
+          <!-- Express Contact Hub -->
+          <div class="express-hub">
+            <a href="https://wa.me/994508005433?text=%F0%9F%9A%98%20Salam%2C%20ehtiyat%20his%C9%99si%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m."
+              class="btn-wa" target="_blank" rel="noopener noreferrer" id="wa-chat-btn">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              <span data-az="WhatsApp Chat" data-en="WhatsApp Chat">WhatsApp Chat</span>
+            </a>
+
+            <a href="tel:+994508005433" class="btn-call" id="call-btn">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span data-az="Zəng Et: +994 50 800 54 33" data-en="Call: +994 50 800 54 33">+994 50 800 54 33</span>
+            </a>
+          </div>
+
+        </div><!-- /.contact-panel -->
+      </div><!-- /.map-contact-grid -->
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FOOTER
+       ==================================================== -->
+  <footer>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <div class="text-center md:text-left">
+          <div class="footer-logo">O22</div>
+          <div class="footer-tagline" data-az="Premium Avto Ehtiyat Hissələri" data-en="Premium Auto Spare Parts">
+            Premium Avto Ehtiyat Hissələri</div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a href="https://wa.me/994508005433" target="_blank" rel="noopener noreferrer"
+            class="footer-copy hover:text-red-500 transition-colors">WhatsApp</a>
+          <span style="color: var(--color-border)">|</span>
+          <a href="https://instagram.com/avto_ehtiyat_hisseleri_022" target="_blank" rel="noopener noreferrer"
+            class="footer-copy hover:text-red-500 transition-colors">Instagram</a>
+        </div>
+
+        <p class="footer-copy">© 2024 O22 Avto Ehtiyat Hissələri</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================
+       SCRIPTS
+       ==================================================== -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
